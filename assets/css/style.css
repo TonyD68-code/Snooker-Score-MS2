@@ -1,3 +1,4 @@
 body {
-    background-color: darkgreen;
+    background-image: url('../images/snooker-ball-on-a-billiard-table.jpg');
+    background-size: cover;
 }
