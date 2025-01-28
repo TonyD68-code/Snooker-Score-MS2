@@ -41,6 +41,11 @@ s#start-game {
     font-size: 3rem;
     font-weight: bold;
   }
+  /* active player styling */
+  .active {
+    background-color: #51b846;
+    font-weight: bold;
+}
 
  /* scores */
  .scores {
@@ -89,7 +94,3 @@ s#start-game {
     }
 }
 
-.active {
-    background-color: #e0e0e0;
-    font-weight: bold;
-}
