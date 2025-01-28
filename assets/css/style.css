@@ -62,3 +62,29 @@ s#start-game {
     cursor: pointer;
     margin-top: 50px;
   }
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 576px) {
+    .names {
+        font-size: 2rem; /* Slightly smaller font for mobile */
+        margin-bottom: 20px;
+    }
+    
+    .col-sm-4 {
+        width: 33.33%; /* Force columns to maintain width on mobile */
+        padding: 0 5px; /* Reduce padding on mobile */
+    }
+    
+    .btn img {
+        width: 30px; /* Slightly smaller balls for mobile */
+        height: 30px;
+    }
+    
+    .row {
+        margin: 0; /* Remove default row margins on mobile */
+    }
+    
+    .container {
+        padding: 0 10px; /* Reduce container padding on mobile */
+    }
+}
