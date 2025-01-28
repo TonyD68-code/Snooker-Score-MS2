@@ -1,6 +1,9 @@
 body {
-    background-image: url('../images/snooker-ball-on-a-billiard-table.jpg');
+    background-image: url('../images/snooker-ball.webp');
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-color: #00973b;
 }
 /* apply styling to start button */
 #start-game {
@@ -14,4 +17,19 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    margin-top: 50px;
 }
+
+.fixed-width {
+    width: 200px; /* Set your desired fixed width */
+  }
+
+  .title-top {
+    color: white;
+    margin-top: 50px;
+  }
+
+  .num-frames {
+    color: white;
+  }
+  
