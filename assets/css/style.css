@@ -42,10 +42,15 @@ body {
 /* index page titles */
 .names {
     color: white;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 3rem;
     font-weight: bold;
   }
 
- 
+ /* scores */
+ .scores {
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+  }
   
