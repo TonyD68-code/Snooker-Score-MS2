@@ -18,13 +18,13 @@
         <div class="col-sm-4 names text-center" id="player1-Score"></div>
         <div class="col-sm-4 names text-center">Vs</div>
         <div class="col-sm-4 names text-center" id="player2-Score"></div>
-      </div>
+    </div>
 </div>
 
 <!-- container for balls and buttons-->
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-sm-4 d-flex flex-column align-items-center">
+        <div class="col-sm-4 d-flex flex-column align-items-center mx-auto">
             <button id="red-ball1" class="btn">
                 <img src="assets\images\red-ball.png" alt="Red Ball" width="40" height="40">
               </button>
@@ -47,18 +47,8 @@
                 <img src="assets\images\black-ball.png" alt="Yellow Ball" width="40" height="40">
               </button>
         </div>
-        <div class="col-sm-4" text-center>
-            <div class="d-flex justify-content-center">
-                <ul class="list-unstyled text-center">
-                    <li><button id="add-points" class="btn-success btn-lg btn-score">Add Points</button></li>
-                    <li><button id="subtract-points" class="btn-score">Subtract Points</button></li>
-                    <li><button id="end-frame" class="btn-score">End Frame</button></li>
-                    <li><button id="end-match" class="btn-score">End Match</button></li>
-                </ul>
-            </div>
-        </div>
         
-        <div class="col-sm-4 d-flex flex-column align-items-center">
+        <div class="col-sm-4 d-flex flex-column align-items-center mx-auto">
             <button id="red-ball2" class="btn">
                 <img src="assets\images\red-ball.png" alt="Red Ball" width="40" height="40">
               </button>
@@ -82,6 +72,19 @@
               </button>
         </div>
 
+
+        <!-- Moved and modified buttons container -->
+<div class="container mt-3">
+  <div id="player1-buttons" class="row justify-content-center">
+      <div class="d-flex flex-row flex-wrap justify-content-center w-100">
+          <button id="add-points" class="btn-success btn-lg btn-score m-2">Add Points</button>
+          <button id="subtract-points" class="btn-score m-2">Subtract Points</button>
+          <button id="end-frame" class="btn-score m-2">End Frame</button>
+          <button id="end-match" class="btn-score m-2">End Match</button>
+      </div>
+  </div>
+</div>
+
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-4 scores text-center" id="player1-Score">Total Score: 100</div>
@@ -96,7 +99,7 @@
                 <div class="col-sm-4 scores text-center" id="player2-Score">Highest Break: 100</div>
               </div>
         </div>
-      </div>
+    </div>
 </div>
 
 
@@ -111,17 +114,6 @@
 </body>
 </html>
 
-
-
-
-
-
-
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-sm-4 names text-center" id="player1-Score"></div>
-    </div>
-</div>
 
 
 
