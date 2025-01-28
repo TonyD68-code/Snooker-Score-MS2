@@ -8,5 +8,14 @@ if (players && players.length > 0) {
     document.getElementById('player2-Score').textContent = players[1];
 }
 
+// Initialize break variable
+let playerOneBreak = 0;
+
+// Add event listener for red ball
+document.getElementById('red-ball1').addEventListener('click', function() {
+    playerOneBreak += 1;
+    console.log('Player 1 break: ' + playerOneBreak);
+});
+
 console.log(players[0]);
 console.log(players[1]);
