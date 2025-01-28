@@ -19,14 +19,23 @@ const ballPoints = {
     'black': 7
 };
 
-// Initialize break variable
+// Initialize break variables
 let playerOneBreak = 0;
+let playerTwoBreak = 0;
 
-// Add event listeners for all balls
+// Add event listeners for all player 1 balls
 Object.entries(ballPoints).forEach(([color, points]) => {
     document.getElementById(`${color}-ball1`).addEventListener('click', function() {
         playerOneBreak += points;
         console.log(`Player 1 break: ${playerOneBreak}`);
+    });
+});
+
+// Add event listeners for all player 2 balls
+Object.entries(ballPoints).forEach(([color, points]) => {
+    document.getElementById(`${color}-ball2`).addEventListener('click', function() {
+        playerTwoBreak += points;
+        console.log(`Player 2 break: ${playerTwoBreak}`);
     });
 });
 
