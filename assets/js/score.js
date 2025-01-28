@@ -8,13 +8,26 @@ if (players && players.length > 0) {
     document.getElementById('player2-Score').textContent = players[1];
 }
 
+// Define ball points mapping
+const ballPoints = {
+    'red': 1,
+    'yellow': 2,
+    'green': 3,
+    'brown': 4,
+    'blue': 5,
+    'pink': 6,
+    'black': 7
+};
+
 // Initialize break variable
 let playerOneBreak = 0;
 
-// Add event listener for red ball
-document.getElementById('red-ball1').addEventListener('click', function() {
-    playerOneBreak += 1;
-    console.log('Player 1 break: ' + playerOneBreak);
+// Add event listeners for all balls
+Object.entries(ballPoints).forEach(([color, points]) => {
+    document.getElementById(`${color}-ball1`).addEventListener('click', function() {
+        playerOneBreak += points;
+        console.log(`Player 1 break: ${playerOneBreak}`);
+    });
 });
 
 console.log(players[0]);
