@@ -88,3 +88,8 @@ s#start-game {
         padding: 0 10px; /* Reduce container padding on mobile */
     }
 }
+
+.active {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
