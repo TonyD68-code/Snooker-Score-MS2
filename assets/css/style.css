@@ -4,8 +4,24 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #00973b;
-}
+
+/* index page titles */
+.title-top {
+    color: white;
+    margin-top: 50px;
+  }
+
+/* number of frames dropdown */
+
+.num-frames {
+    color: white;
+  }
+.fixed-width {
+    width: 200px; /* Set your desired fixed width */
+  }
+
 /* apply styling to start button */
+
 #start-game {
     background-color: #4CAF50;
     border: none;
@@ -20,16 +36,16 @@ body {
     margin-top: 50px;
 }
 
-.fixed-width {
-    width: 200px; /* Set your desired fixed width */
-  }
 
-  .title-top {
+
+/* score page styling */
+/* index page titles */
+.names {
     color: white;
     margin-top: 50px;
+    font-size: 3rem;
+    font-weight: bold;
   }
 
-  .num-frames {
-    color: white;
-  }
+ 
   

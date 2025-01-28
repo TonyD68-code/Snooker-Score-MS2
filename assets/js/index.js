@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
         players.push(playerOne.value);
         players.push(playerTwo.value);
         console.log(players);
-        window.location.href = 'http://www.google.com';
+        // Save players to local storage
+        localStorage.setItem('players', JSON.stringify(players));
+        window.location.href = 'score.html';
     });
 
     console.log(playerOne);
