@@ -26,6 +26,10 @@ let playerTwoBreak = 0;
 // Initialize active player (1 or 2)
 let activePlayer = 1;
 
+// Initialize total score variables
+let playerOneTotal = 0;
+let playerTwoTotal = 0;
+
 // Function to update visual indication of active player
 function updateActivePlayer() {
     const player1Score = document.getElementById('player1-Score');
@@ -85,3 +89,20 @@ function updateCurrentBreak() {
     const currentBreak = activePlayer === 1 ? playerOneBreak : playerTwoBreak;
     breakDisplay.innerText = `Current Break: ${currentBreak}`;
 }
+
+// Add event listener for end break button
+document.getElementById('end-break').addEventListener('click', function() {
+    if (activePlayer === 1) {
+        playerOneTotal += playerOneBreak;
+        document.getElementById('player1-total-score').textContent = players[0] + "'s Score: " + playerOneTotal;
+        playerOneBreak = 0;  // Reset break
+    } else {
+        playerTwoTotal += playerTwoBreak;
+        document.getElementById('player2-total-score').textContent = players[1] + "'s Score: " + playerTwoTotal;
+        playerTwoBreak = 0;  // Reset break
+    }
+    
+    // Reset current break display
+    updateCurrentBreak();
+});
+
