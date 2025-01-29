@@ -96,13 +96,16 @@ document.getElementById('end-break').addEventListener('click', function() {
         playerOneTotal += playerOneBreak;
         document.getElementById('player1-total-score').textContent = players[0] + "'s Score: " + playerOneTotal;
         playerOneBreak = 0;  // Reset break
+        activePlayer = 2;  // Switch to player 2
     } else {
         playerTwoTotal += playerTwoBreak;
         document.getElementById('player2-total-score').textContent = players[1] + "'s Score: " + playerTwoTotal;
         playerTwoBreak = 0;  // Reset break
+        activePlayer = 1;  // Switch to player 1
     }
     
-    // Reset current break display
+    // Reset current break display and update active player visual
     updateCurrentBreak();
+    updateActivePlayer();
 });
 
