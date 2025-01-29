@@ -60,6 +60,7 @@ Object.entries(ballPoints).forEach(([color, points]) => {
         if (activePlayer === 1) {  // Only allow if player 1 is active
             playerOneBreak += points;
             console.log(`Player 1 break: ${playerOneBreak}`);
+            updateCurrentBreak();  // Updates display when player 1 scores
         }
     });
 });
@@ -70,9 +71,17 @@ Object.entries(ballPoints).forEach(([color, points]) => {
         if (activePlayer === 2) {  // Only allow if player 2 is active
             playerTwoBreak += points;
             console.log(`Player 2 break: ${playerTwoBreak}`);
+            updateCurrentBreak();  // Updates display when player 2 scores
         }
     });
 });
 
 console.log(players[0]);
 console.log(players[1]);
+
+// Function to update current break display
+function updateCurrentBreak() {
+    const breakDisplay = document.getElementById('current-break');
+    const currentBreak = activePlayer === 1 ? playerOneBreak : playerTwoBreak;
+    breakDisplay.innerText = `Current Break: ${currentBreak}`;
+}
