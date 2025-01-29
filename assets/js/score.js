@@ -26,10 +26,6 @@ let playerTwoBreak = 0;
 // Initialize active player (1 or 2)
 let activePlayer = 1;
 
-// Initialize total scores
-let playerOneTotal = 0;
-let playerTwoTotal = 0;
-
 // Function to update visual indication of active player
 function updateActivePlayer() {
     const player1Score = document.getElementById('player1-Score');
@@ -78,20 +74,6 @@ Object.entries(ballPoints).forEach(([color, points]) => {
             updateCurrentBreak();  // Updates display when player 2 scores
         }
     });
-});
-
-// Add event listener for end break button
-document.getElementById('end-break').addEventListener('click', function() {
-    if (activePlayer === 1) {
-        playerOneTotal += playerOneBreak;
-        document.getElementById('player1-total-score').textContent = players[0] + "'s score: " + playerOneTotal;
-        playerOneBreak = 0;
-    } else {
-        playerTwoTotal += playerTwoBreak;
-        document.getElementById('player2-total-score').textContent =players[1] + "'s score: " + playerTwoTotal;
-        playerTwoBreak = 0;
-    }
-    updateCurrentBreak();
 });
 
 console.log(players[0]);
